@@ -1,33 +1,25 @@
 /**
  *  菜单数据
  */
-var demo = 'user/Demo.vue';
 const dataManageItems = {
-    name: '用户',
+    name: 'border-Radius',
     meta: {
         icon: 'fa-database',
-        expanded: false
+        expanded: true
     },
+    path: '/user/demo',
+    component: () => import('../../../views/user/BorderRadius.vue')
+    /*
     children: [
         {
             name: '示例',
             path: '/user/demo',
-            component: function() {
-                // return import('../../../views/resource/Demo.vue');
-                return import('../../../views/' + demo);
-            },
+            component: () => import('../../../views/user/BorderRadius.vue'),
             meta: {},
             children: []
-        },
-        {
-            name: '二级菜单',
-            path: '/user/test',
-            component: function() {
-                return import('../../../views/user/Test.vue');
-            },
-            meta: {}
         }
     ]
+    */
 };
 
 export default dataManageItems;

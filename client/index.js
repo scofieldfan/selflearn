@@ -25,7 +25,7 @@ const app = new Vue({
     render(h) {
         return h(App, {
             props: {
-                projectName: 'ZEUS'
+                projectName: 'Learn'
             }
         });
     }

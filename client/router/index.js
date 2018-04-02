@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import { state } from '../store/menu';
 Vue.use(Router);
-
+import menuUtil from '../util/menuUtil';
 export default new Router({
     mode: 'hash',
     linkActiveClass: 'is-active',
@@ -13,11 +14,6 @@ export default new Router({
             meta: {},
             component: () => import('../views/user/BorderRadius.vue')
         },
-        {
-            name: '欢迎页',
-            path: '/test',
-            meta: {},
-            component: () => import('../views/user/Test2.vue')
-        }
+        ...menuUtil.generateRoutesFromMenu(state.items)
     ]
 });

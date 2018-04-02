@@ -5,15 +5,13 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start":
-            "cross-env NODE_ENV=development webpack --env=dev --watch --progress  --config ./build/webpack.config.js",
         "build:test":
             "cross-env NODE_ENV=test webpack --env=test --progress  --config ./build/webpack.config.js",
         "build:prod":
             "cross-env NODE_ENV=production webpack --env=prod --progress --config ./build/webpack.config.js",
         "build:eletheme":
             "et -w  -c client/assets/element-variables.scss -o client/assets/eletheme",
-        "start:serve":
+        "start":
             "cross-env NODE_ENV=development webpack-dev-server --env=dev --color --config ./build/webpack.base.js",
         "lint": "eslint --ext .js,.vue client"
     },
