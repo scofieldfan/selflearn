@@ -10,6 +10,10 @@
         <div class="arc0"></div>
         <div class="arc1"></div>
         <div class="arc2"></div>
+        <div class="triangle1"></div>
+        <div class="triangle2"></div>
+        <div class="triangle3"></div>
+        <div class="triangle4"></div>
     </div>
 </template>
 <script>
@@ -25,6 +29,7 @@ export default {
 @import '../../assets/css/index';
 .border-radius {
     display: flex;
+    flex-wrap: wrap;
     div {
         margin: 10px;
     }
@@ -126,13 +131,33 @@ export default {
         transform: skewY(10deg);
     }
 
-    #triangle-down {
+    .triangle1 {
         width: 0;
         height: 0;
         border-left: 50px solid transparent;
-        border-top: 100px solid red;
+        border-top: 100px solid blue;
         border-right: 50px solid transparent;
-        border-bottom: 100px solid red;
+    }
+    .triangle2 {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-bottom: 100px solid blue;
+        border-right: 50px solid transparent;
+    }
+    .triangle3 {
+        width: 0;
+        height: 0;
+        border: 50px solid transparent;
+        border-left: 100px solid blue;
+    }
+    .triangle4 {
+        width: 0;
+        height: 0;
+        border-left: 50px solid #ccc;
+        border-right: 50px solid #f00;
+        border-bottom: 50px solid #0f0;
+        border-top: 50px solid #00f;
     }
 }
 </style>

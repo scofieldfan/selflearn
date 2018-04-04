@@ -3,10 +3,8 @@
  */
 
 import dataMenuItems from './menuData/dataMenuItems';
-// import string from '../../util/string';
-
 const data = () => {
-    return [dataMenuItems];
+    return dataMenuItems;
 };
 
 export default data;
