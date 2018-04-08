@@ -41,7 +41,6 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-@import '../../assets/css/index';
 .resource {
     min-height: 500px;
     border: 1px solid #ebebeb;

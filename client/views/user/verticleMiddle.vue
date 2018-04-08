@@ -36,7 +36,6 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-@import '../../assets/css/index';
 .verticleMiddle {
     & > div {
         // height: 100px;

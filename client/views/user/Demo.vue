@@ -117,7 +117,6 @@
     </div>
 </template>
 <style lang="less">
-@import '../../assets/css/index';
 .resource-ad {
     .form-block {
         display: block;

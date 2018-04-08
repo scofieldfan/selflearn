@@ -26,7 +26,6 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-@import '../../assets/css/index';
 .border-radius {
     display: flex;
     flex-wrap: wrap;

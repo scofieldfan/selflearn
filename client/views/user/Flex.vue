@@ -31,7 +31,6 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-@import '../../assets/css/index';
 .flexbox {
     & > div {
         height: 100px;
