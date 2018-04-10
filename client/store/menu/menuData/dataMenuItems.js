@@ -46,6 +46,15 @@ const dataManageItems = [
         },
         path: '/user/eventloop',
         component: () => import('../../../views/user/EventLoop.vue')
+    },
+    {
+        name: '30CSS',
+        meta: {
+            icon: 'fa-dribbble',
+            expanded: true
+        },
+        path: '/user/css',
+        component: () => import('../../../views/user/Css.vue')
     }
 
     /*
