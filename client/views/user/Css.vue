@@ -50,7 +50,7 @@ export default {
             stroke-dasharray: 566;
             stroke-dashoffset: 566;
             // animation: draw 5s ease 3;
-            transition: all 3s ease;
+            transition: all 1s ease;
             transform: rotate(-90deg);
         }
         svg:hover {

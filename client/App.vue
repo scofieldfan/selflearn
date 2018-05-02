@@ -10,7 +10,7 @@
 
                 <flex-box justify="flex-start" class="nav-slider-container" :class="{ 'slide-toggle-left': !layout.showSidebar}">
 
-                    <div class="app-title ">NIO {{projectName}}</div>
+                    <div class="app-title "> {{projectName}}</div>
                     <a href="javascript:void(0); " class="sidebar-toggle " @click="onClickToggle ">
                         <span class="fa fa-align-justify "> </span>
                     </a>

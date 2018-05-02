@@ -18,6 +18,7 @@ module.exports = {
         location: true,
         setTimeout: true,
         setInterval: true,
+        clearTimeout: true,
         clearInterval: true,
         Promise: true,
         document: true,

@@ -36,7 +36,7 @@ const dataManageItems = [
             expanded: true
         },
         path: '/user/verticle',
-        component: () => import('../../../views/user/verticleMiddle.vue')
+        component: () => import('../../../views/user/VerticleMiddle.vue')
     },
     {
         name: 'event loop',
@@ -55,6 +55,24 @@ const dataManageItems = [
         },
         path: '/user/css',
         component: () => import('../../../views/user/Css.vue')
+    },
+    {
+        name: '父子组件',
+        meta: {
+            icon: 'fa-dribbble',
+            expanded: true
+        },
+        path: '/user/father',
+        component: () => import('../../../views/user/Father.vue')
+    },
+    {
+        name: '小函数',
+        meta: {
+            icon: 'fa-dribbble',
+            expanded: true
+        },
+        path: '/user/function',
+        component: () => import('../../../views/user/Function.vue')
     }
 
     /*
