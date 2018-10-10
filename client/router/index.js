@@ -3,6 +3,8 @@ import Router from 'vue-router';
 import { state } from '../store/menu';
 Vue.use(Router);
 import menuUtil from '../util/menuUtil';
+
+console.log('router', ...menuUtil.generateRoutesFromMenu(state.items));
 export default new Router({
     mode: 'hash',
     linkActiveClass: 'is-active',

@@ -6,11 +6,11 @@ export default {
             if (item.path) {
                 item.meta.parentMenu = parentMenu;
                 const itemClone = { ...item };
-                delete itemClone.children;
+                //delete itemClone.children;
                 routes.push(itemClone);
             }
             if (item.children) {
-                this.generateRoutesFromMenu(item.children, routes, item);
+                //this.generateRoutesFromMenu(item.children, routes, item);
             }
         }
         return routes;
