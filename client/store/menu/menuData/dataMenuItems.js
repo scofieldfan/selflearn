@@ -20,23 +20,43 @@ const dataManageItems = [
         path: '/user/demo',
         component: () => import('../../../views/user/BorderRadius.vue')
     },
+
+
     {
-        name: '三等分布局',
+        name: '常见布局',
         meta: {
             icon: 'fa-dribbble',
             expanded: true
         },
-        path: '/user/flex',
-        component: () => import('../../../views/user/Flex.vue')
-    },
-    {
-        name: '垂直居中布局',
-        meta: {
-            icon: 'fa-dribbble',
-            expanded: true
-        },
-        path: '/user/verticle',
-        component: () => import('../../../views/user/VerticleMiddle.vue')
+        path: '/user/layout',
+        component: () => import('../../../views/user/layout/Index.vue'),
+        children: [
+
+            {
+                name: '三等分布局',
+                meta: {},
+                path: '/user/layout/flex',
+                component: () => import('../../../views/user/layout/Flex.vue')
+            },
+            {
+                name: '垂直居中布局',
+                meta: {},
+                path: '/user/layout/verticle',
+                component: () => import('../../../views/user/layout/VerticleMiddle.vue')
+            },
+            {
+                name: '两栏布局',
+                path: '/user/layout/layout',
+                component: () => import('../../../views/user/layout/Layouts.vue')
+            },
+            {
+                name: '圣杯布局',
+                path: '/user/layout/grails',
+                component: () => import('../../../views/user/layout/Grail.vue')
+            }
+
+
+        ]
     },
     {
         name: 'event loop',
@@ -82,6 +102,15 @@ const dataManageItems = [
         },
         path: '/user/scroll',
         component: () => import('../../../views/user/Scroll.vue')
+    },
+    {
+        name: 'Prototype',
+        meta: {
+            icon: 'fa-dribbble',
+            expanded: true
+        },
+        path: '/user/object',
+        component: () => import('../../../views/user/Object.vue')
     },
     {
         name: 'router测试',
