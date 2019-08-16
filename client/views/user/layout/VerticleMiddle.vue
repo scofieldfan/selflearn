@@ -1,11 +1,11 @@
 <template>
     <div class="verticleMiddle">
         <div class="demo1">
-            Hi fan....
+            demo1
         </div>
 
         <div class="demo2">
-            <p>hi</p>
+            <p>demo2</p>
         </div>
 
         <div class="demo3">
@@ -13,19 +13,31 @@
         </div>
 
         <div class="demo4">
-            <p>hi</p>
+            <p>demo4</p>
         </div>
 
         <div class="demo5">
             <div class="parent">
-                <p>hi</p>
+                <p>demo5</p>
             </div>
         </div>
         <div class="demo6">
             <div class="parent">
-                <p>hi</p>
+                <p>demo6</p>
             </div>
         </div>
+
+        <div class="demo7">
+            <div class="parent">
+                <p>demo7...</p>
+            </div>
+        </div>
+        <div class="demo8">
+            <div class="parent">
+                <p>demo8...</p>
+            </div>
+        </div>
+
     </div>
 </template>
 <script>
@@ -101,6 +113,7 @@ export default {
 
     .demo6 {
         height: 100px;
+        overflow: hidden;
         .parent {
             position: relative;
             /*absolute 高度塌陷 */
@@ -116,6 +129,37 @@ export default {
                 width: 50%;
                 margin: auto;
                 background: #ccc;
+            }
+        }
+    }
+
+    .demo7 {
+        overflow: hidden;
+        .parent {
+            height: 100px;
+            position: relative;
+            background: red;
+            p {
+                height: 50px;
+                background: #ccc;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+    }
+
+    .demo8 {
+        overflow: hidden;
+        .parent {
+            background: red;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            p {
+                background: #ccc;
+                height: 50px;
             }
         }
     }
